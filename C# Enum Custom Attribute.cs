@@ -1,3 +1,8 @@
+public interface IAttribute<T>
+{
+    T Value { get; }
+}
+
 public sealed class ReferencesAttribute : Attribute, IAttribute<string[]>
 {
     private readonly string[] value;
